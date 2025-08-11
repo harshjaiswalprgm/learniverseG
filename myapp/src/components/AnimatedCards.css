@@ -1,0 +1,46 @@
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 40px;
+}
+
+.card {
+  border-radius: 20px;
+  padding: 20px;
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+  overflow: hidden;
+}
+
+.card .type {
+  font-size: 12px;
+  font-weight: bold;
+  opacity: 0.8;
+  letter-spacing: 1px;
+}
+
+.card .title {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.read-btn {
+  background: rgba(255, 255, 255, 0.8);
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  align-self: flex-start;
+  transition: background 0.3s;
+}
+
+.read-btn:hover {
+  background: rgba(255, 255, 255, 1);
+}

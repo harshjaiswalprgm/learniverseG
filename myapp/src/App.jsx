@@ -2,13 +2,20 @@ import React from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import "./App.css";
+// import AnimatedBackground from "./components/AnimatedBackground";
+import LandingPage from "./components/LandingPage";
+import ShowcaseGrid from "./components/ShowcaseGrid";
+import AnimatedCards from "./components/AnimatedCards";
+
 
 function App() {
   return (
     <Router>
+      {/* <AnimatedBackground /> */}
       <Navbar />
-      {/* Your page content can go here */}
-      <div>Home Page Content</div>
+      <LandingPage />
+      <ShowcaseGrid />
+      <AnimatedCards />
     </Router>
   );
 }

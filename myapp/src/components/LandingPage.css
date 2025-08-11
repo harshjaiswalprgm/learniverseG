@@ -1,0 +1,60 @@
+.landing-section {
+  padding-top: 100px; /* avoid navbar overlap */
+  text-align: center;
+  background-color: transparent; /* can remove if you want transparent */
+}
+
+.heading-container {
+  margin-bottom: 20px;
+}
+
+.offer-text {
+  font-size: 12px;
+  color: #8a4fff;
+  margin-bottom: 8px;
+}
+
+.main-heading {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.sub-text {
+  font-size: 14px;
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Wave image without white background */
+/* .image-mask {
+  display: inline-block;
+  clip-path: polygon(
+    0 20%, 5% 15%, 10% 20%, 15% 15%, 20% 20%, 25% 15%, 30% 20%,
+    35% 15%, 40% 20%, 45% 15%, 50% 20%, 55% 15%, 60% 20%,
+    65% 15%, 70% 20%, 75% 15%, 80% 20%, 85% 15%, 90% 20%, 95% 15%, 100% 20%,
+    100% 100%, 0% 100%
+  );
+  overflow: hidden;
+  max-width: 900px;
+}
+
+.image-mask img {
+  width: 100%;
+  height: auto;
+  display: block;
+} */
+
+.image-mask {
+  display: inline-block;
+  width: 100%; /* make it wide */
+  max-width: 1100px; /* wider than before */
+  overflow: hidden;
+  clip-path: path("M0,50 C150,0 350,100 500,50 C650,0 850,100 1000,50 L1000,500 L0,500 Z");
+}
+
+.image-mask img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
