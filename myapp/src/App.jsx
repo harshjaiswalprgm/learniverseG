@@ -1,11 +1,14 @@
 import React from "react";
-import { BrowserRouter as Router } from "react-router-dom";
+// import { BrowserRouter as Router } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import "./App.css";
 // import AnimatedBackground from "./components/AnimatedBackground";
 import LandingPage from "./components/LandingPage";
 import ShowcaseGrid from "./components/ShowcaseGrid";
 import AnimatedCards from "./components/AnimatedCards";
+import Projects from "./components/Projects";
+import Footer from "./components/Footer";
+import Invite from "./components/Invite";
 
 
 function App() {
@@ -16,6 +19,9 @@ function App() {
       <LandingPage />
       <ShowcaseGrid />
       <AnimatedCards />
+      <Projects />
+      <Invite />
+      <Footer />
     </Router>
   );
 }

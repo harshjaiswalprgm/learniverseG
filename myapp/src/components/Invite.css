@@ -1,0 +1,16 @@
+.cloud-text {
+  background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb');
+  background-size: cover;
+  background-position: center;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  font-size: 12rem; /* Force huge size */
+  line-height: 1.1;
+}
+
+@media (min-width: 768px) {
+  .cloud-text {
+    font-size: 15rem; /* Even bigger on larger screens */
+  }
+}
